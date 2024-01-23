@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { colors } from '../../../values/colors';
+import { colors } from '../../../../../values/colors';
 
 const styles = StyleSheet.create({
   container: {
@@ -13,6 +13,14 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     color: colors.blue100,
   },
+  button: {
+    backgroundColor: colors.blue200,
+    padding: 10,
+    borderRadius: 10,
+  },
+  buttonText: {
+    color: colors.white
+  }
 });
 
 export default styles;
