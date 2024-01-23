@@ -13,13 +13,18 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     color: colors.blue100,
   },
-  button: {
-    backgroundColor: colors.blue200,
-    padding: 10,
+
+  // button layout
+  buttonContainer: {
+    backgroundColor: colors.blue300,
+    overflow: 'hidden',
     borderRadius: 10,
   },
+  button: {
+    padding: 10,
+  },
   buttonText: {
-    color: colors.white
+    color: colors.white,
   }
 });
 
