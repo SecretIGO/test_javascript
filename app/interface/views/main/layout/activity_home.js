@@ -14,17 +14,24 @@ const styles = StyleSheet.create({
     color: colors.blue100,
   },
 
+  // signup button
+  text_signup: {
+    color: colors.blue300,
+  },
+
   // button layout
-  buttonContainer: {
+  button_container: {
     backgroundColor: colors.blue300,
     overflow: 'hidden',
-    borderRadius: 10,
+    borderRadius: 5,
+    margin: 10,
   },
   button: {
     padding: 10,
   },
-  buttonText: {
+  button_text: {
     color: colors.white,
+    fontSize: 18,
   }
 });
 

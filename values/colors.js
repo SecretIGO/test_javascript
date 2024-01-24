@@ -4,6 +4,8 @@ export const colors = {
     primary: '#3498db',
     secondary: '#2ecc71',
 
+    default_grey: '#A9A9A9',
+
     blue100: '#8293C1',
     blue200: '#3C5496',
     blue300: '#5B7FE3',
