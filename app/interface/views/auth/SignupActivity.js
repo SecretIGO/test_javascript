@@ -15,35 +15,28 @@ const SignupActivity = ({ navigation }) => {
         alert('Signing you up!');
     }
 
+    const handleSigninPress = () => {
+        navigation.navigate('Login');
+    }
+
     return (
 
         <View style={styles.outer_container}>
-            <View style={styles.button_back_container}>
-                <TouchableNativeFeedback
-                    onPress={handleBackButton}
-                    background={TouchableNativeFeedback.Ripple('rgba(0, 0, 0, 0.2)', false)}
-                    >
-                    <View style={styles.button_back}>
-                        <Image source={require('../../../../assets/icon_back.png')} style={styles.button_back_icon} />
-                    </View>
-                    
-                </TouchableNativeFeedback>
-            </View>
             
             <View style={styles.container}>
-                <Text>LOGO</Text>
+                <Image source={require('../../../../assets/logo_test2.png')} style={styles.image_logo} />
+                <Text>Create an Account</Text>
                 <View style={styles.text_input}>
                     <TextInput placeholder='Username...' />
                 </View>
                 <View style={styles.text_input}>
                     <TextInput placeholder='Password...' />
                 </View>
-                <Text style={styles.link_forgor_password}>Forgot Password?</Text>
             </View>
 
             <View style={styles.button_container}>
                 <View style={styles.login_options_container}>
-                    <Text style={styles.text_login_options}>- Other Signin Options -</Text>
+                    <Text style={styles.text_login_options}>- Signup with -</Text>
 
                     <View style={styles.login_options}>
                         <TouchableNativeFeedback
@@ -66,6 +59,10 @@ const SignupActivity = ({ navigation }) => {
                     
                 </View>
 
+                <View style={styles.container_option_signin                                                                                                                                                                                                                  }>
+                    <Text>Already have an account? <Text style={styles.link_signin} onPress={handleSigninPress}>Signin</Text></Text>
+                </View>
+
                 <View style={styles.button_container}>
                     <TouchableNativeFeedback
                     onPress={handleSignup}
@@ -77,7 +74,6 @@ const SignupActivity = ({ navigation }) => {
                 </TouchableNativeFeedback>
                 </View>
 
-                
             </View>
 
             <StatusBar style="auto" />

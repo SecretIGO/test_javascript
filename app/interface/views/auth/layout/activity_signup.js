@@ -8,6 +8,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
 
+    image_logo: {
+        width: '50%',
+        height: 50,
+    },  
+
     button_back_container: {
         position: 'absolute',
         height: 35,
@@ -47,7 +52,16 @@ const styles = StyleSheet.create({
         color: colors.blue300,
         marginEnd: 10,
         fontWeight: 'bold',
-        alignSelf: 'flex-end',
+    },
+    link_signin: {
+        color: colors.blue300,
+        marginEnd: 10,
+        fontWeight: 'bold',
+    },
+
+    container_option_signin: {
+        alignItems: 'center',
+        marginBottom: 20,
     },
 
     /***
@@ -67,8 +81,8 @@ const styles = StyleSheet.create({
     },
 
     button_option_circ: {
-        height: 50,
-        width: 50,
+        height: 35,
+        width: 35,
         marginTop: 10,
         marginBottom: 20,
         marginHorizontal: 15,
